@@ -50,10 +50,10 @@ diamondsfilt <- diamonds|>
 
 ```{r break-it-1}
 ### Both partners - delete this comment, then write some code here
-### to plot, summarize, calculate something simple using the diamonds
-### dataset.
+# go brensketballers 
+diamondsthing <- plot(diamonds$price ~ diamonds$cut)
 
-
+#boxplot of something?? not sure 
 ```
 
 ## STEP 11: And even more merge conflicts!

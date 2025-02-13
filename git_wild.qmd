@@ -23,12 +23,11 @@ execute:
 ### In this code chunk, start with the diamonds dataset (built in to
 ### ggplot2 package) and create a subset based on filtering, e.g., 
 ### size greater than 1 carat or cut is "Ideal"
-diamonds<- ggplot2::diamonds
+library(tidyverse) 
+data(diamonds)
 
-filt_diamond <- diamonds|> 
-  filter(carat > 1 )
-
-
+diamondsfilt <- diamonds|>
+  filter(price >= 1000)
 ```
 
 ## STEP 7: Uh oh, merge conflicts!

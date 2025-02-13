@@ -8,11 +8,13 @@ execute:
   message: false
 ---
 
+
 # load libraries
 ```{r}
 library(ggplot2)
 library(tidyverse)
 ```
+
 
 
 ## STEP 5: No merge conflicts!
@@ -22,10 +24,12 @@ library(tidyverse)
 ### ggplot2 package) and create a plot of price vs. carat (or some other
 ### variables of your choice)
 
+
 data(diamonds) 
 
 ggplot(diamonds, aes( x = carat, y = price)) +
   geom_point()
+
 
 ```
 
@@ -34,7 +38,11 @@ ggplot(diamonds, aes( x = carat, y = price)) +
 ### ggplot2 package) and create a subset based on filtering, e.g., 
 ### size greater than 1 carat or cut is "Ideal"
 
+library(tidyverse) 
+data(diamonds)
 
+diamondsfilt <- diamonds|>
+  filter(price >= 1000)
 
 ```
 

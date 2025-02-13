@@ -63,7 +63,10 @@ ggplot(diamonds, aes(x = cut, y = price)) +
 ## STEP 11: And even more merge conflicts!
 
 ```{r break-it-2}
-diamond_broke <- diamondsfilt|>
-  select(carat,cut,price)
+
+ggplot(diamonds, aes(x = color, y = z)) +
+  geom_point()
+
+
 ```
 

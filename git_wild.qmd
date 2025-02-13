@@ -49,9 +49,13 @@ diamondsfilt <- diamonds|>
 ## STEP 7: Uh oh, merge conflicts!
 
 ```{r break-it-1}
+
 ### Both partners - delete this comment, then write some code here
 # go brensketballers 
 diamondsthing <- plot(diamonds$price ~ diamonds$cut)
+
+ggplot(diamonds, aes(x = cut, y = price)) +
+         geom_bar(stat = "identity")
 
 #boxplot of something?? not sure 
 ```
